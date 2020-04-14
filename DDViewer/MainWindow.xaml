@@ -1,0 +1,52 @@
+﻿<Window x:Class="DDViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:custom="clr-namespace:DockingLibrary;assembly=DockingLibrary"
+        Title="Анализ диаграмм направленности" Name="mainWindow"
+        Height="700" Width="900"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Loaded="MainWindow_Loaded"
+        KeyDown="mainWindow_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+              Name="mainMenu">
+            <MenuItem Header="Файл" >
+                <MenuItem Header="Открыть ..." Click="MainMenuOpen_Click" />
+                <Separator />
+                <MenuItem Header="Выход" Click="MainMenuExit_Click" />
+            </MenuItem>
+            <MenuItem Header="Помощь">
+                <MenuItem Header="Справка" />
+                <MenuItem Header="О программе" />
+            </MenuItem>
+        </Menu>
+        
+        <DockPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+                   Background="LightGray">
+            <custom:DockManager Name="dockManager" />
+        </DockPanel>
+                
+        <Label Grid.Row="2" Grid.Column="0" Content="Готово"
+                Margin="5 0 5 0" />
+        <Slider Grid.Row="2" Grid.Column="1" Orientation="Horizontal"
+                Name="chart3DSlider"
+                Minimum="0" Maximum="0" Value="0"
+                SmallChange="1" LargeChange="1"
+                TickFrequency="1.0" IsSnapToTickEnabled="True"
+                Visibility="Hidden"
+                ValueChanged="chart3DSlider_ValueChanged" />
+    </Grid>
+</Window>

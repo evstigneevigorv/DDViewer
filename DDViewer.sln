@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDViewer", "DDViewer\DDViewer.csproj", "{3D6C3252-0355-4C3D-8C28-BC841C061578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockingLibrary", "DDViewer\Libraries\DockingLibrary\DockingLibrary.csproj", "{FA274CD2-57BB-4EB0-B101-A562ADB1685E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDrawerConsole", "DDDrawerConsole\DDDrawerConsole.csproj", "{34408E29-62D8-40C1-BCEE-C67A2CEE0716}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D6C3252-0355-4C3D-8C28-BC841C061578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6C3252-0355-4C3D-8C28-BC841C061578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6C3252-0355-4C3D-8C28-BC841C061578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6C3252-0355-4C3D-8C28-BC841C061578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA274CD2-57BB-4EB0-B101-A562ADB1685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA274CD2-57BB-4EB0-B101-A562ADB1685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA274CD2-57BB-4EB0-B101-A562ADB1685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA274CD2-57BB-4EB0-B101-A562ADB1685E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34408E29-62D8-40C1-BCEE-C67A2CEE0716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34408E29-62D8-40C1-BCEE-C67A2CEE0716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34408E29-62D8-40C1-BCEE-C67A2CEE0716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34408E29-62D8-40C1-BCEE-C67A2CEE0716}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
